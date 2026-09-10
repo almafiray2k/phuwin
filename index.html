@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phuwin Tangsakyuen — Official Profile & Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0F172A',
+                            deepBlue: '#1E3A8A',
+                            accent: '#2563EB',
+                            softBlue: '#EFF6FF',
+                            softBlueBorder: '#BFDBFE',
+                            bgLight: '#F8FAFC',
+                            cardBg: '#FFFFFF',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        thai: ['"Sarabun"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome for clean iconography -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   
+</head>
+<body class="bg-brand-bgLight text-brand-navy font-sans antialiased selection:bg-brand-softBlueBorder selection:text-brand-deepBlue thai-accent-bg">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-nav border-b border-slate-200/60 transition-all duration-300" id="main-header">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#hero" class="group flex items-center gap-3">
+                <span class="w-9 h-9 rounded-full bg-brand-navy text-white flex items-center justify-center font-bold text-sm tracking-widest shadow-sm group-hover:bg-brand-accent transition-colors">
+                    PT
+                </span>
+                <span class="font-bold text-lg tracking-tight text-brand-navy group-hover:text-brand-accent transition-colors">
+                    PHUWIN <span class="font-normal text-brand-muted text-sm ml-1 font-thai">| ภูวินทร์</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-accent transition-colors">About</a>
+                <a href="#education-career" class="hover:text-brand-accent transition-colors">Education & Career</a>
+                <a href="#skills" class="hover:text-brand-accent transition-colors">Skills</a>
+                <a href="#highlights" class="hover:text-brand-accent transition-colors">Highlights</a>
+                <a href="#fun-facts" class="hover:text-brand-accent transition-colors">Little Things</a>
+            </nav>
+
+            <!-- Social / Quick Links Button -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="#official-links" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-brand-navy bg-slate-100 hover:bg-brand-softBlue hover:text-brand-accent rounded-full transition-all border border-slate-200">
+                    <span>Official Links</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-6 space-y-4 shadow-lg">
+            <a href="#about" class="mobile-nav-link block font-medium text-slate-700 hover:text-brand-accent py-2 border-b border-slate-100">About</a>
+            <a href="#education-career" class="mobile-nav-link block font-medium text-slate-700 hover:text-brand-accent py-2 border-b border-slate-100">Education & Career</a>
+            <a href="#skills" class="mobile-nav-link block font-medium text-slate-700 hover:text-brand-accent py-2 border-b border-slate-100">Skills & Hobbies</a>
+            <a href="#highlights" class="mobile-nav-link block font-medium text-slate-700 hover:text-brand-accent py-2 border-b border-slate-100">Career Highlights</a>
+            <a href="#fun-facts" class="mobile-nav-link block font-medium text-slate-700 hover:text-brand-accent py-2 border-b border-slate-100">Little Things</a>
+            <a href="#official-links" class="mobile-nav-link block font-medium text-brand-accent py-2">Official Links & Socials →</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-6xl mx-auto px-6 min-h-[90vh] flex items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full">
+            
+            <!-- Left Text Content -->
+            <div class="lg:col-span-7 space-y-6 order-2 lg:order-1 text-center lg:text-left reveal">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-softBlue border border-brand-softBlueBorder text-brand-deepBlue text-xs font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                    Thai Actor • Singer • Artist
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-brand-navy leading-tight">
+                    Phuwin Tangsakyuen
+                    <span class="block text-2xl sm:text-3xl font-thai font-light text-slate-500 mt-2">
+                        ภูวินทร์ ตั้งศักดิ์ยืน
+                    </span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-600 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    A young artist with talent, curiosity, and his own kind of charm.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#about" class="w-full sm:w-auto px-7 py-3.5 bg-brand-navy text-white rounded-xl font-medium shadow-md hover:bg-brand-deepBlue hover:shadow-lg transition-all text-center flex items-center justify-center gap-2">
+                        <span>Explore Profile</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="#official-links" class="w-full sm:w-auto px-7 py-3.5 bg-white text-brand-navy rounded-xl font-medium border border-slate-200 hover:border-brand-accent hover:text-brand-accent transition-all text-center flex items-center justify-center gap-2">
+                        <span>Official Links</span>
+                        <i class="fa-solid fa-link text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Minimal Info Badges -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-200/80 text-left">
+                    <div>
+                        <p class="text-xs text-brand-muted uppercase tracking-wider font-semibold">Born</p>
+                        <p class="text-sm font-semibold text-brand-navy">5 July 2003</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-brand-muted uppercase tracking-wider font-semibold">Agency</p>
+                        <p class="text-sm font-semibold text-brand-navy">GMMTV</p>
+                    </div>
+                    <div>
+                        <p class="text-xs text-brand-muted uppercase tracking-wider font-semibold">Education</p>
+                        <p class="text-sm font-semibold text-brand-navy">Chulalongkorn Univ.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image Card Frame -->
+            <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center reveal">
+                <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
+                    <!-- Subtle Decorative Background Shape -->
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-brand-softBlueBorder to-slate-200 rounded-3xl transform rotate-2 blur-sm"></div>
+                    
+                    <div class="relative bg-white p-3 rounded-2xl shadow-xl border border-slate-100">
+                        <div class="overflow-hidden rounded-xl bg-slate-100 aspect-[4/5] relative group">
+                            <!-- High quality photo with fallback placeholder -->
+                            <img 
+                                src="images/Phuwin Tangsakyuen.jpg" 
+                                alt="Phuwin Tangsakyuen" 
+                                class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                                id="phuwin-hero-img"
+                                onerror="this.onerror=null; this.src='https://placehold.co/800x1000/0f172a/ffffff?text=Phuwin+Tangsakyuen';"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/60 via-transparent to-transparent opacity-60"></div>
+                            
+                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                                <p class="text-xs uppercase tracking-widest text-slate-200 font-semibold">GMMTV Artist</p>
+                                <p class="text-base font-bold font-thai">ภูวินทร์ ตั้งศักดิ์ยืน</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT / PROFIL SINGKAT -->
+    <section id="about" class="py-20 bg-white border-y border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <h2 class="text-xs uppercase font-bold text-brand-accent tracking-widest mb-2">Biography</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">About Phuwin</h3>
+                <div class="w-12 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Left Narrative Profile -->
+                <div class="lg:col-span-7 space-y-6 text-slate-600 leading-relaxed text-base reveal">
+                    <p class="text-lg font-medium text-brand-navy leading-relaxed">
+                        Phuwin Tangsakyuen (ภูวินทร์ ตั้งศักดิ์ยืน) adalah seorang aktor dan penyanyi muda berbakat asal Thailand di bawah naungan agensi <strong class="text-brand-navy font-semibold">GMMTV</strong>.
+                    </p>
+                    <p>
+                        Lahir pada 5 Juli 2003, Phuwin memulai kariernya di dunia hiburan sejak usia cilik sebagai aktor cilik dalam berbagai drama televisi dan panggung teater musikal. Dengan dedikasi tinggi dan bakat alami, Phuwin terus berkembang hingga meraih popularitas luas baik di Thailand maupun secara internasional.
+                    </p>
+                    <p>
+                        Selain berakting dalam drama-drama populer seperti <em>Fish Upon the Sky</em>, <em>Never Let Me Go</em>, dan <em>We Are</em>, Phuwin juga aktif mengisi soundtrack drama, tampil dalam pertunjukan musik live, serta mengejar pendidikan tinggi di bidang teknologi dan rekayasa informasi.
+                    </p>
+
+                    <div class="p-4 rounded-xl bg-brand-softBlue border border-brand-softBlueBorder text-slate-700 text-sm flex items-start gap-3">
+                        <i class="fa-solid fa-circle-info text-brand-accent text-lg mt-0.5"></i>
+                        <div>
+                            <span class="font-bold text-brand-navy">Fun Fact:</span> Phuwin menguasai tiga bahasa (Thailand, Inggris, dan Mandarin) serta memiliki ketertarikan mendalam pada musik piano, coding, dan esports.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Quick Fact Card Grid -->
+                <div class="lg:col-span-5 reveal">
+                    <div class="bg-brand-bgLight p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                        <h4 class="text-sm uppercase font-bold text-brand-navy tracking-wider border-b border-slate-200 pb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-address-card text-brand-accent"></i> Quick Facts
+                        </h4>
+
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between py-2 border-b border-slate-200/60">
+                                <span class="text-brand-muted">Nama Lengkap</span>
+                                <span class="font-semibold text-brand-navy text-right">Phuwin Tangsakyuen</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-200/60">
+                                <span class="text-brand-muted">Nama Thailand</span>
+                                <span class="font-semibold text-brand-navy font-thai text-right">ภูวินทร์ ตั้งศักดิ์ยืน</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-200/60">
+                                <span class="text-brand-muted">Tanggal Lahir</span>
+                                <span class="font-semibold text-brand-navy text-right">5 Juli 2003</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-200/60">
+                                <span class="text-brand-muted">Kebangsaan</span>
+                                <span class="font-semibold text-brand-navy text-right">Thailand</span>
+                            </div>
+                            <div class="flex justify-between py-2 border-b border-slate-200/60">
+                                <span class="text-brand-muted">Profesi</span>
+                                <span class="font-semibold text-brand-navy text-right">Aktor, Penyanyi, Artist</span>
+                            </div>
+                            <div class="flex justify-between py-2">
+                                <span class="text-brand-muted">Agensi</span>
+                                <span class="font-semibold text-brand-navy text-right">GMMTV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: EDUCATION & CAREER -->
+    <section id="education-career" class="py-20 max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2 class="text-xs uppercase font-bold text-brand-accent tracking-widest mb-2">Background</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Education & Career</h3>
+            <div class="w-12 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Education Card -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow reveal">
+                <div class="w-12 h-12 rounded-xl bg-brand-softBlue border border-brand-softBlueBorder text-brand-accent flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-muted mb-1">Pendidikan</h4>
+                <h5 class="text-xl font-bold text-brand-navy mb-3">Chulalongkorn University</h5>
+                
+                <div class="space-y-3 text-slate-600 text-sm">
+                    <p class="font-medium text-brand-deepBlue">
+                        <i class="fa-solid fa-microchip text-xs mr-2"></i>Faculty of Engineering
+                    </p>
+                    <p>
+                        Program studi <strong>Information and Communication Engineering (ICE)</strong>, sebuah program internasional bergengsi yang menggabungkan rekayasa perangkat lunak, ilmu komputer, dan teknologi komunikasi.
+                    </p>
+                    <p class="text-xs text-brand-muted border-t border-slate-100 pt-3">
+                        <i class="fa-solid fa-check-circle text-emerald-500 mr-1"></i> Menyeimbangkan aktivitas hiburan profesional dengan pendidikan tinggi di bidang teknik.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Career Timeline Card -->
+            <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow reveal">
+                <div class="w-12 h-12 rounded-xl bg-brand-softBlue border border-brand-softBlueBorder text-brand-accent flex items-center justify-center text-xl mb-6">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-muted mb-1">Perjalanan Karier</h4>
+                <h5 class="text-xl font-bold text-brand-navy mb-3">Actor & Musician</h5>
+                
+                <ul class="space-y-4 text-slate-600 text-sm relative border-l-2 border-slate-200 pl-4 ml-2">
+                    <li class="relative">
+                        <span class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
+                        <span class="text-xs font-bold text-brand-accent">2014 – 2016</span>
+                        <p class="font-semibold text-brand-navy">Awal Karier Aktor Cilik</p>
+                        <p class="text-xs text-slate-500">Tampil dalam teater musikal <em>The Sound of Music</em> dan peran tamu dalam drama TV.</p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
+                        <span class="text-xs font-bold text-brand-accent">2018 – Sekarang</span>
+                        <p class="font-semibold text-brand-navy">Aktor Utama GMMTV</p>
+                        <p class="text-xs text-slate-500">Membintangi drama hits seperti <em>Fish Upon the Sky</em>, <em>Never Let Me Go</em>, dan <em>We Are</em>.</p>
+                    </li>
+                    <li class="relative">
+                        <span class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-brand-accent"></span>
+                        <span class="text-xs font-bold text-brand-accent">Musik & Lainnya</span>
+                        <p class="font-semibold text-brand-navy">Singer & Entrepreneur</p>
+                        <p class="text-xs text-slate-500">Rilis lagu OST drama, proyek musikal, dan mendirikan apparel brand DialBlack.</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: SKILLS & HOBBIES -->
+    <section id="skills" class="py-20 bg-white border-y border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <h2 class="text-xs uppercase font-bold text-brand-accent tracking-widest mb-2">Talents & Passions</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Skills & Hobbies</h3>
+                <div class="w-12 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Skill 1 -->
+                <div class="p-6 rounded-2xl bg-brand-bgLight border border-slate-200 hover:border-brand-softBlueBorder hover:shadow-md transition-all group reveal">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-brand-accent flex items-center justify-center text-lg mb-4 group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-navy text-base mb-1">Acting</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Pengalaman seni peran luas dari drama komedi romantis, aksi, hingga drama emosional.
+                    </p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="p-6 rounded-2xl bg-brand-bgLight border border-slate-200 hover:border-brand-softBlueBorder hover:shadow-md transition-all group reveal">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-brand-accent flex items-center justify-center text-lg mb-4 group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-navy text-base mb-1">Singing & Piano</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Vokal yang lembut untuk OST drama serta kemampuan mahir memainkan instrumen piano.
+                    </p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="p-6 rounded-2xl bg-brand-bgLight border border-slate-200 hover:border-brand-softBlueBorder hover:shadow-md transition-all group reveal">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-brand-accent flex items-center justify-center text-lg mb-4 group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-navy text-base mb-1">Technology & IT</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Mahasiswa teknik rekayasa komputer dan informasi di Chulalongkorn University.
+                    </p>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="p-6 rounded-2xl bg-brand-bgLight border border-slate-200 hover:border-brand-softBlueBorder hover:shadow-md transition-all group reveal">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-brand-accent flex items-center justify-center text-lg mb-4 group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-navy text-base mb-1">Gaming & Esports</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Penyuka gim kompetitif dan pengisi suara resmi dalam beberapa proyek video game populer.
+                    </p>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="p-6 rounded-2xl bg-brand-bgLight border border-slate-200 hover:border-brand-softBlueBorder hover:shadow-md transition-all group reveal">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-brand-accent flex items-center justify-center text-lg mb-4 group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-navy text-base mb-1">Multilingual</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Lancar berkomunikasi dalam bahasa Thailand, Inggris, serta dasar bahasa Mandarin.
+                    </p>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="p-6 rounded-2xl bg-brand-bgLight border border-slate-200 hover:border-brand-softBlueBorder hover:shadow-md transition-all group reveal">
+                    <div class="w-10 h-10 rounded-lg bg-white border border-slate-200 text-brand-accent flex items-center justify-center text-lg mb-4 group-hover:bg-brand-accent group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <h4 class="font-bold text-brand-navy text-base mb-1">Fashion & Style</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Ketertarikan pada tren streetwear dan pemilik brand fashion apparel DialBlack.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: CAREER HIGHLIGHTS -->
+    <section id="highlights" class="py-20 max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <h2 class="text-xs uppercase font-bold text-brand-accent tracking-widest mb-2">Portfolio</h2>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Career Highlights</h3>
+            <div class="w-12 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Work 1 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between reveal">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-brand-softBlue text-brand-deepBlue text-xs font-bold rounded-full">2024</span>
+                        <span class="text-xs text-brand-muted font-semibold"><i class="fa-solid fa-tv mr-1"></i>Series</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-accent transition-colors">We Are</h4>
+                    <p class="text-xs font-semibold text-brand-deepBlue mb-3">Peran: Peem (Peeranat)</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Drama komedi romantis tentang kehidupan perkuliahan, persahabatan, dan seni, yang menjadi salah satu drama favorit penggemar.
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-xs font-medium text-slate-500 flex justify-between items-center">
+                    <span>GMMTV</span>
+                    <span>Main Role</span>
+                </div>
+            </div>
+
+            <!-- Work 2 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between reveal">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-brand-softBlue text-brand-deepBlue text-xs font-bold rounded-full">2022</span>
+                        <span class="text-xs text-brand-muted font-semibold"><i class="fa-solid fa-tv mr-1"></i>Series</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-accent transition-colors">Never Let Me Go</h4>
+                    <p class="text-xs font-semibold text-brand-deepBlue mb-3">Peran: Nuengdiao Kiattrakulmethee</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Drama aksi-romansa intens tentang anak pengusaha kaya yang harus dilindungi oleh pengawal pribadinya di tengah konflik keluarga.
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-xs font-medium text-slate-500 flex justify-between items-center">
+                    <span>GMMTV</span>
+                    <span>Main Role</span>
+                </div>
+            </div>
+
+            <!-- Work 3 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between reveal">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-brand-softBlue text-brand-deepBlue text-xs font-bold rounded-full">2021</span>
+                        <span class="text-xs text-brand-muted font-semibold"><i class="fa-solid fa-tv mr-1"></i>Series</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-accent transition-colors">Fish Upon the Sky</h4>
+                    <p class="text-xs font-semibold text-brand-deepBlue mb-3">Peran: Pi (Pattawee)</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Drama komedi kampus yang melambungkan nama Phuwin secara internasional, memerankan mahasiswa kedokteran gigi yang bertransformasi.
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-xs font-medium text-slate-500 flex justify-between items-center">
+                    <span>GMMTV</span>
+                    <span>Main Role</span>
+                </div>
+            </div>
+
+            <!-- Work 4 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between reveal">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-brand-softBlue text-brand-deepBlue text-xs font-bold rounded-full">2020</span>
+                        <span class="text-xs text-brand-muted font-semibold"><i class="fa-solid fa-tv mr-1"></i>Series</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-accent transition-colors">The Gifted: Graduation</h4>
+                    <p class="text-xs font-semibold text-brand-deepBlue mb-3">Peran: Third (Thammarong)</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Drama misteri misterius bertema sekolah berbakat di mana Phuwin memerankan siswa dengan kemampuan khusus membaca pikiran.
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-xs font-medium text-slate-500 flex justify-between items-center">
+                    <span>GMMTV</span>
+                    <span>Main Role</span>
+                </div>
+            </div>
+
+            <!-- Work 5 -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between reveal">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-brand-softBlue text-brand-deepBlue text-xs font-bold rounded-full">2023</span>
+                        <span class="text-xs text-brand-muted font-semibold"><i class="fa-solid fa-film mr-1"></i>Movie</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-accent transition-colors">Hoon Payon</h4>
+                    <p class="text-xs font-semibold text-brand-deepBlue mb-3">Peran: Tham</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Film layar lebar bergenre horor misteri tempat Phuwin membuktikan kemampuan akting dalam sinema layar lebar Thailand.
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-xs font-medium text-slate-500 flex justify-between items-center">
+                    <span>Five Star Production</span>
+                    <span>Main Role</span>
+                </div>
+            </div>
+
+            <!-- Work 6 - Music OST -->
+            <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all group flex flex-col justify-between reveal">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 bg-brand-softBlue text-brand-deepBlue text-xs font-bold rounded-full">Discography</span>
+                        <span class="text-xs text-brand-muted font-semibold"><i class="fa-solid fa-compact-disc mr-1"></i>Music / OST</span>
+                    </div>
+                    <h4 class="text-xl font-bold text-brand-navy mb-2 group-hover:text-brand-accent transition-colors">OST & Singles</h4>
+                    <p class="text-xs font-semibold text-brand-deepBlue mb-3">Vocalist</p>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Menyanyikan lagu-lagu populer seperti "Living For You" (Never Let Me Go OST), "Cute Cute", dan kolaborasi lagu "100 Seasons".
+                    </p>
+                </div>
+                <div class="px-6 py-3 bg-slate-50 border-t border-slate-100 text-xs font-medium text-slate-500 flex justify-between items-center">
+                    <span>GMMTV Records</span>
+                    <span>Single & OST</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: LITTLE THINGS ABOUT PHUWIN -->
+    <section id="fun-facts" class="py-20 bg-white border-y border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <h2 class="text-xs uppercase font-bold text-brand-accent tracking-widest mb-2">Trivia & Tidbits</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-brand-navy">Little Things About Phuwin</h3>
+                <div class="w-12 h-1 bg-brand-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Fact 1 -->
+                <div class="p-6 rounded-2xl bg-brand-softBlue/40 border border-brand-softBlueBorder/60 hover:bg-brand-softBlue transition-all reveal">
+                    <span class="text-2xl mb-3 block">🎹</span>
+                    <h4 class="font-bold text-brand-navy mb-2 text-sm">Pianis Berbakat</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Phuwin sering membagikan momen saat memainkan instrumen piano klasik maupun pop dengan sangat fasih di sela waktu luangnya.
+                    </p>
+                </div>
+
+                <!-- Fact 2 -->
+                <div class="p-6 rounded-2xl bg-brand-softBlue/40 border border-brand-softBlueBorder/60 hover:bg-brand-softBlue transition-all reveal">
+                    <span class="text-2xl mb-3 block">💻</span>
+                    <h4 class="font-bold text-brand-navy mb-2 text-sm">Tech & Engineering Mind</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Berbeda dari stereotip umum aktor, Phuwin sangat menyukai dunia coding, sistem jaringan, dan rakit PC sendiri.
+                    </p>
+                </div>
+
+                <!-- Fact 3 -->
+                <div class="p-6 rounded-2xl bg-brand-softBlue/40 border border-brand-softBlueBorder/60 hover:bg-brand-softBlue transition-all reveal">
+                    <span class="text-2xl mb-3 block">🎮</span>
+                    <h4 class="font-bold text-brand-navy mb-2 text-sm">Gamer Sejati</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Phuwin sangat aktif bermain gim kompetitif seperti FPS/Overwatch, bahkan pernah berpartisipasi dalam event showmatch esport.
+                    </p>
+                </div>
+
+                <!-- Fact 4 -->
+                <div class="p-6 rounded-2xl bg-brand-softBlue/40 border border-brand-softBlueBorder/60 hover:bg-brand-softBlue transition-all reveal">
+                    <span class="text-2xl mb-3 block">🌐</span>
+                    <h4 class="font-bold text-brand-navy mb-2 text-sm">Kemampuan Bahasa</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Karena menempuh program internasional, Phuwin sangat lancar berbahasa Inggris saat berinteraksi dengan fans global.
+                    </p>
+                </div>
+
+                <!-- Fact 5 -->
+                <div class="p-6 rounded-2xl bg-brand-softBlue/40 border border-brand-softBlueBorder/60 hover:bg-brand-softBlue transition-all reveal">
+                    <span class="text-2xl mb-3 block">🖤</span>
+                    <h4 class="font-bold text-brand-navy mb-2 text-sm">Brand DialBlack</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Ia merilis brand pakaian bernama DialBlack yang mengusung gaya estetika kasual dan minimalis sesuai selera pribadinya.
+                    </p>
+                </div>
+
+                <!-- Fact 6 -->
+                <div class="p-6 rounded-2xl bg-brand-softBlue/40 border border-brand-softBlueBorder/60 hover:bg-brand-softBlue transition-all reveal">
+                    <span class="text-2xl mb-3 block">⭐</span>
+                    <h4 class="font-bold text-brand-navy mb-2 text-sm">Dedikasi Tinggi</h4>
+                    <p class="text-slate-600 text-xs leading-relaxed">
+                        Dikenal di kalangan staf dan sesama seniman sebagai sosok pekerja keras yang selalu rendah hati dan terus belajar hal baru.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 7: CLOSING & QUOTE -->
+    <section class="py-24 max-w-4xl mx-auto px-6 text-center reveal">
+        <div class="bg-gradient-to-b from-brand-navy to-brand-deepBlue text-white p-10 sm:p-16 rounded-3xl shadow-xl relative overflow-hidden">
+            <!-- Background subtle ornament -->
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="max-w-2xl mx-auto space-y-6 relative z-10">
+                <i class="fa-solid fa-quote-left text-brand-softBlueBorder/40 text-4xl"></i>
+                <blockquote class="text-xl sm:text-2xl font-light italic leading-relaxed text-slate-100">
+                    “Thank you for being part of my little inspiration.”
+                </blockquote>
+                <div class="w-10 h-0.5 bg-brand-accent mx-auto my-4"></div>
+                <p class="font-semibold text-sm tracking-widest uppercase text-brand-softBlueBorder">
+                    — Phuwin Tangsakyuen
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: FOOTER & OFFICIAL LINKS -->
+    <footer id="official-links" class="bg-brand-navy text-slate-300 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="md:col-span-6 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-brand-accent text-white flex items-center justify-center font-bold text-xs">
+                            PT
+                        </span>
+                        <span class="font-bold text-white text-lg tracking-tight">
+                            PHUWIN TANGSAKYUEN
+                        </span>
+                    </div>
+                    <p class="text-slate-400 text-xs max-w-sm leading-relaxed">
+                        A personal fan profile website celebrating the journey, work, and talent of Phuwin Tangsakyuen. Designed with modern minimalism and clean visual hierarchy.
+                    </p>
+                </div>
+
+                <!-- Col 2: Official Links -->
+                <div class="md:col-span-6 space-y-4">
+                    <h4 class="text-xs uppercase font-bold text-slate-200 tracking-wider">Official & Verified Channels</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.instagram.com/phuwin" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-800 hover:bg-brand-accent text-slate-200 hover:text-white rounded-xl text-xs font-semibold transition-all inline-flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-sm"></i>
+                            <span>Instagram @phuwin</span>
+                        </a>
+                        <a href="https://twitter.com/phuwintang" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-800 hover:bg-brand-accent text-slate-200 hover:text-white rounded-xl text-xs font-semibold transition-all inline-flex items-center gap-2">
+                            <i class="fa-brands fa-x-twitter text-sm"></i>
+                            <span>X @phuwintang</span>
+                        </a>
+                        <a href="https://www.gmm-tv.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-800 hover:bg-brand-accent text-slate-200 hover:text-white rounded-xl text-xs font-semibold transition-all inline-flex items-center gap-2">
+                            <i class="fa-solid fa-tv text-sm"></i>
+                            <span>GMMTV Official</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>Made with ♡ for Phuwin Tangsakyuen</p>
+                <p>© 2026 Personal Profile Project. Non-official fan tribute.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" class="fixed bottom-6 right-6 w-11 h-11 bg-brand-navy text-white rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-brand-accent focus:outline-none z-40">
+        <i class="fa-solid fa-arrow-up text-sm"></i>
+    </button>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /* 1. Mobile Menu Toggle */
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    const isHidden = mobileMenu.classList.contains('hidden');
+                    if (isHidden) {
+                        mobileMenu.classList.remove('hidden');
+                        menuIcon.classList.remove('fa-bars');
+                        menuIcon.classList.add('fa-xmark');
+                    } else {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                    }
+                });
+
+                mobileNavLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                    });
+                });
+            }
+
+            /* 2. Scroll Reveal Animations (IntersectionObserver) */
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.12
+            };
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: unobserve if we only want it to animate once
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const revealElements = document.querySelectorAll('.reveal');
+            revealElements.forEach(el => revealObserver.observe(el));
+
+            /* 3. Back-to-Top Button & Header Elevation */
+            const backToTopBtn = document.getElementById('back-to-top');
+            const header = document.getElementById('main-header');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+                    backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+                    backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+                }
+
+                if (window.scrollY > 50) {
+                    header.classList.add('shadow-sm');
+                } else {
+                    header.classList.remove('shadow-sm');
+                }
+            });
+
+            if (backToTopBtn) {
+                backToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
